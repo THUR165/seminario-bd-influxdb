@@ -1,62 +1,189 @@
-# Proposta de Seminário: InfluxDB e o Armazenamento de Séries Temporais
+# Proposta de Seminário: InfluxDB e o Gerenciamento de Dados de Séries Temporais
 
-**Disciplina:** Projeto e Administração de Banco de Dados  
-**Professor:** Taciano  
+**Disciplina:** Projeto e Administração de Banco de Dados
+**Professor:** Taciano
 
 ## Equipe
 
-- Arthur de Medeiros Dantas  
-- Expedito Luiz de Franca  
-- Ivyson Wanderson Nunes Martins  
-- Jose Gean de Macedo Alves  
-- Julia Lilian Prudencio da Costa  
+* Arthur de Medeiros Dantas
+* Expedito Luiz de Franca
+* Ivyson Wanderson Nunes Martins
+* Jose Gean de Macedo Alves
+* Julia Lilian Prudencio da Costa
 
 ---
 
-## SGBD Escolhido: InfluxDB
+# 1. Introdução
 
-O Sistema Gerenciador de Banco de Dados (SGBD) escolhido para a pesquisa e apresentação do seminário é o **InfluxDB**.
+O crescimento da Internet das Coisas (IoT), da computação em nuvem, do monitoramento de infraestruturas e da análise de dados em tempo real gerou uma demanda cada vez maior por sistemas capazes de armazenar e processar grandes volumes de informações geradas continuamente ao longo do tempo.
 
-Trata-se de um banco de dados **Não-Relacional (NoSQL)** classificado especificamente como um **TSDB (Time Series Database ou Banco de Dados de Séries Temporais)**. Desenvolvido do zero pela empresa InfluxData, ele foi projetado para otimizar o armazenamento, a recuperação e a análise de dados carimbados com o tempo (timestamps).
+Nesse contexto surgem os Bancos de Dados de Séries Temporais (Time Series Databases – TSDBs), desenvolvidos especificamente para lidar com dados associados a um instante temporal, permitindo consultas rápidas, alta taxa de inserção de registros e análises históricas eficientes.
 
----
-
-## Justificativa e Relevância
-
-SGBDs relacionais tradicionais lidam com extrema eficiência em transações de negócios (ACID), mas frequentemente sofrem com gargalos de performance e excesso de indexação quando submetidos a cargas de trabalho que exigem a ingestão contínua de milhares de registros por segundo.
-
-O **InfluxDB** resolve essa limitação do mercado. Ele é amplamente utilizado na indústria moderna em áreas como:
-
-- **Internet das Coisas (IoT):** Armazenamento de telemetria contínua de milhares de sensores.  
-- **Monitoramento e DevOps:** Análise de desempenho de servidores, infraestruturas de nuvem e redes.  
-- **Mercado Financeiro:** Registro de cotações em tempo real com precisão de nanossegundos.  
-
-O InfluxDB destaca-se por sua altíssima velocidade de gravação, compressão agressiva para redução de custos de disco e implementação nativa de políticas de retenção automática (Data Lifecycle Management).
+Entre as principais soluções existentes destaca-se o InfluxDB, um banco de dados especializado em séries temporais amplamente utilizado por empresas e organizações que necessitam armazenar métricas, eventos, telemetria e dados de sensores em larga escala.
 
 ---
 
-## Proposta Prática
+# 2. SGBD Escolhido: InfluxDB
 
-A demonstração prática do seminário terá como objetivo comprovar a eficiência do InfluxDB na ingestão e visualização rápida de dados temporais, simulando um ambiente de telemetria de sensores IoT.
+O Sistema Gerenciador de Banco de Dados escolhido para este seminário é o **InfluxDB**.
 
-### O que será feito:
+O InfluxDB é um banco de dados Não Relacional (NoSQL) desenvolvido pela InfluxData e classificado como um TSDB (Time Series Database). Sua arquitetura foi projetada especificamente para armazenar, indexar e consultar dados temporais com alto desempenho.
 
-- **Provisionamento do Ambiente:**  
-  A instalação e execução do InfluxDB não será feita de forma nativa no sistema operacional, mas sim através de tecnologia de containers utilizando o Docker. Isso garantirá um ambiente isolado, reprodutível e alinhado com as boas práticas de infraestrutura moderna.
+Diferentemente dos bancos de dados relacionais tradicionais, que normalmente utilizam tabelas estruturadas para armazenar informações transacionais, o InfluxDB foi otimizado para cenários onde milhares ou até milhões de registros são gerados continuamente ao longo do tempo.
 
-- **Configuração do SGBD:**  
-  Pela interface nativa da ferramenta, será configurada uma *Organization*, um *Bucket* (equivalente ao database relacional) e a geração de um Token de Autenticação de API para garantir a segurança da ingestão de dados.
+Os dados armazenados no InfluxDB são organizados por meio de conceitos próprios da plataforma:
 
-- **Ingestão de Dados (Line Protocol):**  
-  Utilizaremos a interface de linha de comando (via cURL) para enviar dados simulados de sensores climáticos (temperatura e umidade) da cidade de Caicó/RN. Será demonstrada a simplicidade do Line Protocol, formato de texto altamente otimizado do InfluxDB para inserção massiva, utilizando as estruturas de *Measurements*, *Tags*, *Fields* e *Timestamps*.
+* **Measurements:** equivalentes a tabelas lógicas que agrupam dados semelhantes;
+* **Tags:** informações utilizadas para indexação e filtragem rápida;
+* **Fields:** valores efetivamente armazenados;
+* **Timestamp:** marca temporal associada a cada registro;
+* **Buckets:** estruturas responsáveis pelo armazenamento dos dados e suas políticas de retenção.
 
-- **Consulta e Visualização (Data Explorer):**  
-  Finalizaremos a prática demonstrando como os dados inseridos são processados imediatamente pelo SGBD. Acessaremos o painel **Data Explorer** do próprio InfluxDB para plotar gráficos de linha em tempo real, evidenciando as oscilações dos dados inseridos e comprovando a vocação da ferramenta para análises temporais instantâneas.
+Além disso, o sistema oferece recursos avançados para análise temporal, agregação de dados, monitoramento em tempo real e gerenciamento automático do ciclo de vida das informações.
 
 ---
 
-## Referências
+# 3. Justificativa da Escolha
 
-- INFLUXDATA. *InfluxDB Official Documentation*. Disponível em: https://docs.influxdata.com/influxdb/v2/get-started/. Acesso em: 23 jun. 2026.  
-- DOCKER HUB. *InfluxDB Official Image*. Disponível em: https://hub.docker.com/_/influxdb. Acesso em: 23 jun. 2026.  
- 
+A escolha do InfluxDB foi motivada pela crescente importância dos dados temporais nos sistemas modernos.
+
+Atualmente, diversos setores dependem da coleta contínua de informações para tomada de decisões e monitoramento de processos. Entre as principais aplicações do InfluxDB destacam-se:
+
+## Internet das Coisas (IoT)
+
+Sensores instalados em residências, indústrias e cidades inteligentes geram informações constantemente sobre temperatura, umidade, consumo energético, localização e outras variáveis.
+
+## Monitoramento de Infraestrutura e DevOps
+
+Empresas utilizam o InfluxDB para armazenar métricas de servidores, aplicações, bancos de dados e dispositivos de rede, permitindo identificar falhas e gargalos de desempenho.
+
+## Mercado Financeiro
+
+Instituições financeiras utilizam bancos de séries temporais para registrar oscilações de preços, volumes de negociação e indicadores econômicos em tempo real.
+
+## Sistemas de Monitoramento Industrial
+
+Equipamentos industriais produzem dados continuamente, exigindo armazenamento eficiente e consultas rápidas para análises operacionais.
+
+Dessa forma, o InfluxDB representa uma tecnologia moderna e amplamente utilizada em ambientes corporativos, tornando-se uma excelente opção para estudo na disciplina de Projeto e Administração de Banco de Dados.
+
+---
+
+# 4. Objetivo do Seminário
+
+O seminário tem como objetivo apresentar os conceitos fundamentais dos bancos de dados de séries temporais e demonstrar, na prática, como o InfluxDB realiza o armazenamento, gerenciamento e análise de dados temporais.
+
+Além disso, busca-se evidenciar as diferenças entre bancos relacionais tradicionais e bancos especializados em séries temporais, destacando os cenários em que cada tecnologia apresenta melhor desempenho.
+
+---
+
+# 5. Proposta Prática
+
+A atividade prática consistirá na construção de um ambiente de monitoramento simplificado utilizando o InfluxDB para armazenar dados simulados de sensores climáticos.
+
+O cenário escolhido será a coleta de informações de temperatura e umidade da cidade de Caicó/RN, permitindo demonstrar as principais funcionalidades do SGBD.
+
+## 5.1 Provisionamento do Ambiente
+
+O InfluxDB será executado utilizando containers Docker.
+
+Essa abordagem permitirá:
+
+* Facilidade de instalação;
+* Isolamento do ambiente;
+* Reprodutibilidade da demonstração;
+* Utilização de práticas modernas de infraestrutura.
+
+## 5.2 Configuração Inicial
+
+Após a inicialização do ambiente serão configurados:
+
+* Organization;
+* Bucket;
+* Usuário administrador;
+* Token de autenticação.
+
+Essa etapa demonstrará os mecanismos básicos de administração e segurança da plataforma.
+
+## 5.3 Modelagem dos Dados
+
+Será apresentada a estrutura utilizada pelo InfluxDB para armazenamento de séries temporais.
+
+Exemplo conceitual:
+
+Measurement:
+
+* clima
+
+Tags:
+
+* cidade = Caicó
+* estado = RN
+
+Fields:
+
+* temperatura
+* umidade
+
+Timestamp:
+
+* data e horário da coleta
+
+## 5.4 Inserção de Dados
+
+Os dados serão enviados para o banco utilizando o Line Protocol do InfluxDB através de comandos cURL.
+
+Essa etapa demonstrará:
+
+* Processo de ingestão de dados;
+* Estrutura de armazenamento;
+* Eficiência na gravação de informações temporais.
+
+## 5.5 Consultas de Dados
+
+Serão realizadas consultas utilizando as ferramentas disponibilizadas pelo próprio InfluxDB para recuperar informações armazenadas.
+
+Serão demonstrados exemplos de:
+
+* Consulta por intervalo de tempo;
+* Filtragem por tags;
+* Recuperação dos registros mais recentes;
+* Visualização histórica dos dados.
+
+## 5.6 Visualização e Análise
+
+Utilizando o Data Explorer do InfluxDB serão gerados gráficos em tempo real para exibir a evolução das medições de temperatura e umidade.
+
+Essa etapa permitirá observar como o banco de dados processa e apresenta informações temporais de forma imediata.
+
+---
+
+# 6. Funcionalidades do InfluxDB que Serão Demonstradas
+
+Durante a apresentação serão exploradas as seguintes funcionalidades:
+
+* Administração de Buckets;
+* Controle de acesso por Tokens;
+* Armazenamento de séries temporais;
+* Utilização de Measurements, Tags e Fields;
+* Ingestão de dados utilizando Line Protocol;
+* Consultas temporais;
+* Visualização gráfica integrada;
+* Organização eficiente de dados históricos;
+* Processamento otimizado para grandes volumes de registros.
+
+---
+
+# 7. Resultados Esperados
+
+Ao final da demonstração espera-se comprovar que o InfluxDB é uma solução eficiente para cenários que exigem armazenamento e análise de dados temporais.
+
+Também será possível compreender as diferenças entre bancos de dados relacionais tradicionais e bancos especializados em séries temporais, identificando os cenários em que cada abordagem é mais adequada.
+
+---
+
+# Referências
+
+* INFLUXDATA. InfluxDB Documentation. Disponível em: [https://docs.influxdata.com/](https://docs.influxdata.com/influxdb/v2/get-started/). Acesso em: 23 jun. 2026.
+
+* DOCKER HUB. InfluxDB Official Image. Disponível em: https://hub.docker.com/_/influxdb. Acesso em: 23 jun. 2026.
