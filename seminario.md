@@ -1,6 +1,7 @@
 # Proposta de Seminário: InfluxDB e o Gerenciamento de Dados de Séries Temporais
 
 **Disciplina:** Projeto e Administração de Banco de Dados
+
 **Professor:** Taciano
 
 ## Equipe
