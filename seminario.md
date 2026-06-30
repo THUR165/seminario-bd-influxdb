@@ -183,6 +183,46 @@ Também será possível compreender as diferenças entre bancos de dados relacio
 
 ---
 
+# 8. Material Desenvolvido
+
+Para complementar a apresentação do seminário, será disponibilizado um repositório no GitHub contendo todo o material utilizado durante o desenvolvimento da pesquisa e da demonstração prática. O objetivo é permitir que qualquer usuário consiga reproduzir o ambiente e executar os exemplos apresentados durante o seminário.
+
+
+## Material disponibilizado
+
+### instalacaoambiente.md
+
+Arquivo contendo o procedimento completo para instalação do Docker, criação do container e inicialização do InfluxDB OSS v2.
+
+### demostracaopratica.md
+
+Guia passo a passo da demonstração prática, desde a configuração inicial até a consulta e visualização dos dados no Data Explorer.
+
+
+## Código Utilizado na Demonstração
+
+Durante a apresentação será utilizado o seguinte comando para iniciar o ambiente do InfluxDB utilizando Docker:
+
+```bash
+docker run -d \
+-p 8086:8086 \
+--name influxdb_seminario \
+-v influxdb_data:/var/lib/influxdb2 \
+influxdb:2
+```
+
+Após a inicialização do ambiente, toda a demonstração será realizada pela interface web do **InfluxDB OSS v2**, contemplando as seguintes etapas:
+
+- Configuração do usuário administrador;
+- Criação da Organization;
+- Criação do Bucket;
+- Geração do API Token;
+- Inserção de dados utilizando o recurso **Load Data → Line Protocol**;
+- Consulta das informações no **Data Explorer**;
+- Visualização gráfica das medições de temperatura e umidade.
+
+Todo o material, incluindo os códigos utilizados na prática, permanecerá disponível no repositório GitHub para consulta e reprodução da demonstração.
+
 # Referências
 
 * INFLUXDATA. InfluxDB Documentation. Disponível em: [https://docs.influxdata.com/](https://docs.influxdata.com/influxdb/v2/get-started/). Acesso em: 23 jun. 2026.
