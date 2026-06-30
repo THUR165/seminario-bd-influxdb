@@ -44,10 +44,11 @@ Esses recursos serão utilizados durante toda a demonstração.
 Na interface do InfluxDB, acesse:
 
 ```
-Load Data → Line Protocol
+Bucket → +add data (no seu bucket criado) → Line Protocol
 ```
 
-Copie todo o conteúdo do arquivo:
+
+Copie todo o conteúdo do arquivo (insira uma linha por vez):
 
 ```
 dados_climaticos.lp
@@ -88,6 +89,8 @@ clima
 - temperatura
 - umidade
 - pressao
+
+selecione somente temperatura
 
 Execute a consulta clicando em **Submit**.
 

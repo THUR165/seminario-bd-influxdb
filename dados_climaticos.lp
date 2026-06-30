@@ -1,0 +1,11 @@
+clima,cidade=Caico temperatura=23.1
+clima,cidade=Caico temperatura=24.5
+clima,cidade=Caico temperatura=26.8
+clima,cidade=Caico temperatura=29.2
+clima,cidade=Caico temperatura=32.5
+clima,cidade=Caico temperatura=34.8
+clima,cidade=Caico temperatura=35.2
+clima,cidade=Caico temperatura=33.1
+clima,cidade=Caico temperatura=30.4
+clima,cidade=Caico temperatura=28.7
+clima,cidade=Caico temperatura=26.5
