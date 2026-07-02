@@ -1,11 +1,95 @@
-clima,cidade=Caico temperatura=23.1
-clima,cidade=Caico temperatura=24.5
-clima,cidade=Caico temperatura=26.8
-clima,cidade=Caico temperatura=29.2
-clima,cidade=Caico temperatura=32.5
-clima,cidade=Caico temperatura=34.8
-clima,cidade=Caico temperatura=35.2
-clima,cidade=Caico temperatura=33.1
-clima,cidade=Caico temperatura=30.4
-clima,cidade=Caico temperatura=28.7
-clima,cidade=Caico temperatura=26.5
+clima,cidade=Caico temperatura=22.0 1782864000000000000
+clima,cidade=Caico temperatura=22.3 1782865800000000000
+clima,cidade=Caico temperatura=22.7 1782867600000000000
+clima,cidade=Caico temperatura=23.2 1782869400000000000
+clima,cidade=Caico temperatura=23.8 1782871200000000000
+clima,cidade=Caico temperatura=24.6 1782873000000000000
+clima,cidade=Caico temperatura=25.5 1782874800000000000
+clima,cidade=Caico temperatura=26.7 1782876600000000000
+clima,cidade=Caico temperatura=28.0 1782878400000000000
+clima,cidade=Caico temperatura=29.4 1782880200000000000
+clima,cidade=Caico temperatura=30.8 1782882000000000000
+clima,cidade=Caico temperatura=32.1 1782883800000000000
+clima,cidade=Caico temperatura=33.2 1782885600000000000
+clima,cidade=Caico temperatura=34.1 1782887400000000000
+clima,cidade=Caico temperatura=34.9 1782889200000000000
+clima,cidade=Caico temperatura=35.6 1782891000000000000
+clima,cidade=Caico temperatura=36.0 1782892800000000000
+clima,cidade=Caico temperatura=35.9 1782894600000000000
+clima,cidade=Caico temperatura=35.6 1782896400000000000
+clima,cidade=Caico temperatura=35.1 1782898200000000000
+clima,cidade=Caico temperatura=34.4 1782900000000000000
+clima,cidade=Caico temperatura=33.6 1782901800000000000
+clima,cidade=Caico temperatura=32.7 1782903600000000000
+clima,cidade=Caico temperatura=31.8 1782905400000000000
+clima,cidade=Caico temperatura=30.9 1782907200000000000
+clima,cidade=Caico temperatura=30.0 1782909000000000000
+clima,cidade=Caico temperatura=29.1 1782910800000000000
+clima,cidade=Caico temperatura=28.2 1782912600000000000
+clima,cidade=Caico temperatura=27.4 1782914400000000000
+clima,cidade=Caico temperatura=26.6 1782916200000000000
+clima,cidade=Caico temperatura=25.8 1782918000000000000
+clima,cidade=Caico temperatura=25.1 1782919800000000000
+clima,cidade=Caico temperatura=24.5 1782921600000000000
+clima,cidade=Caico temperatura=24.0 1782923400000000000
+clima,cidade=Caico temperatura=23.6 1782925200000000000
+clima,cidade=Caico temperatura=23.2 1782927000000000000
+clima,cidade=Caico temperatura=22.9 1782928800000000000
+clima,cidade=Caico temperatura=22.6 1782930600000000000
+clima,cidade=Caico temperatura=22.4 1782932400000000000
+clima,cidade=Caico temperatura=22.2 1782934200000000000
+clima,cidade=Caico temperatura=22.1 1782936000000000000
+clima,cidade=Caico temperatura=22.0 1782937800000000000
+clima,cidade=Caico temperatura=22.1 1782939600000000000
+clima,cidade=Caico temperatura=22.4 1782941400000000000
+clima,cidade=Caico temperatura=22.8 1782943200000000000
+clima,cidade=Caico temperatura=23.4 1782945000000000000
+clima,cidade=Caico temperatura=24.1 1782946800000000000
+clima,cidade=Caico temperatura=25.0 1782948600000000000
+clima,cidade=Caico temperatura=26.0 1782950400000000000
+clima,cidade=Caico temperatura=27.2 1782952200000000000
+clima,cidade=Caico temperatura=28.5 1782954000000000000
+clima,cidade=Caico temperatura=29.9 1782955800000000000
+clima,cidade=Caico temperatura=31.3 1782957600000000000
+clima,cidade=Caico temperatura=32.6 1782959400000000000
+clima,cidade=Caico temperatura=33.8 1782961200000000000
+clima,cidade=Caico temperatura=34.8 1782963000000000000
+clima,cidade=Caico temperatura=35.5 1782964800000000000
+clima,cidade=Caico temperatura=36.1 1782966600000000000
+clima,cidade=Caico temperatura=36.3 1782968400000000000
+clima,cidade=Caico temperatura=36.0 1782970200000000000
+clima,cidade=Caico temperatura=35.6 1782972000000000000
+clima,cidade=Caico temperatura=35.0 1782973800000000000
+clima,cidade=Caico temperatura=34.2 1782975600000000000
+clima,cidade=Caico temperatura=33.3 1782977400000000000
+clima,cidade=Caico temperatura=32.4 1782979200000000000
+clima,cidade=Caico temperatura=31.5 1782981000000000000
+clima,cidade=Caico temperatura=30.6 1782982800000000000
+clima,cidade=Caico temperatura=29.7 1782984600000000000
+clima,cidade=Caico temperatura=28.8 1782986400000000000
+clima,cidade=Caico temperatura=27.9 1782988200000000000
+clima,cidade=Caico temperatura=27.1 1782990000000000000
+clima,cidade=Caico temperatura=26.3 1782991800000000000
+clima,cidade=Caico temperatura=25.6 1782993600000000000
+clima,cidade=Caico temperatura=24.9 1782995400000000000
+clima,cidade=Caico temperatura=24.3 1782997200000000000
+clima,cidade=Caico temperatura=23.8 1782999000000000000
+clima,cidade=Caico temperatura=23.4 1783000800000000000
+clima,cidade=Caico temperatura=23.1 1783002600000000000
+clima,cidade=Caico temperatura=22.8 1783004400000000000
+clima,cidade=Caico temperatura=22.6 1783006200000000000
+clima,cidade=Caico temperatura=22.4 1783008000000000000
+clima,cidade=Caico temperatura=22.2 1783009800000000000
+clima,cidade=Caico temperatura=22.1 1783011600000000000
+clima,cidade=Caico temperatura=22.0 1783013400000000000
+clima,cidade=Caico temperatura=22.0 1783015200000000000
+clima,cidade=Caico temperatura=22.0 1783017000000000000
+clima,cidade=Caico temperatura=22.0 1783018800000000000
+clima,cidade=Caico temperatura=22.0 1783020600000000000
+clima,cidade=Caico temperatura=22.0 1783022400000000000
+clima,cidade=Caico temperatura=22.0 1783024200000000000
+clima,cidade=Caico temperatura=22.0 1783026000000000000
+clima,cidade=Caico temperatura=22.0 1783027800000000000
+clima,cidade=Caico temperatura=22.0 1783029600000000000
+clima,cidade=Caico temperatura=22.0 1783031400000000000
+clima,cidade=Caico temperatura=22.0 1783033200000000000
